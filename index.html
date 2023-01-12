@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniele Minieri">
+        <title>Griglia Campo Minato</title>
+
+        <!-- Stile -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="flex align-center justify-between">
+            <a href="#" class="flex align-center"><img src="img/logo.png" alt="Logo"> <h1>Campo Minato</h1></a>
+            <nav>
+                <!-- Selettore Dificoltà -->
+                <label for="difficulty">Difficoltà:</label>
+                <select name="difficulty" id="difficulty">
+                    <option value="10" selected>Facile</option>
+                    <option value="9">Normale</option>
+                    <option value="7">Difficile</option>
+                </select>
+                <!-- Pulsante Avvia Partita -->
+                <button type="button" id="play">Gioca</button>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <div class="container h-100 flex align-center justify-center">
+                <h1>premi su "gioca" per inizire la partita</h1>
+                <!-- Griglia -->
+                <div class="grid d-none">
+                    
+                </div>
+            </div>
+        </main>
+        
+        <!-- FOOTER -->
+        <footer class="flex align-center">
+            <h4>Made with &hearts; by <a href="#">Boolean</a></h4>
+        </footer>
+        <!-- Script -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

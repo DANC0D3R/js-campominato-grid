@@ -1,0 +1,127 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+:root{
+    --background-color: #7FFFD4;
+    --cell-for-row: 10;
+}
+
+.flex{
+    display: flex;
+}
+
+.d-none{
+    display: none;
+}
+
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* ----- HEADER ------ */
+header{
+    height: 10vh;
+    padding: 1rem;
+
+    background-color: white;
+}
+
+header a{
+    text-decoration: none;
+    
+    color: #000000;
+}
+
+header img{
+    width: 80px;
+    margin-right: 1rem;
+}
+
+#difficulty{
+    width: 200px;
+}
+
+#play{
+    padding: 2px 30px;
+    
+    border: 1px solid #808080;
+    border-radius: 3px;
+
+    background-color: #FFFFFF;
+}
+
+/* ----- MAIN ----- */
+main{
+    height: 82vh;
+    padding: 2rem;
+
+    background-color: var(--background-color);
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.grid{
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    width: 60vh;
+    height: 60vh;
+
+    border: 1px solid #000000;
+}
+
+.cell{
+    width: calc(100% / var(--cell-for-row));
+    height: calc(100% / var(--cell-for-row));
+
+    border: 1px solid #000000;
+    
+    background-color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.clicked{
+    background-color: var(--background-color);
+}
+
+/* ----- FOOTER ----- */
+footer {
+    height: 8vh;
+    padding: 1rem;
+    
+    background-color: #FFFFFF;
+}
+
+footer h4 a{
+    text-decoration: none;
+}
